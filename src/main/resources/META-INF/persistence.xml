@@ -5,14 +5,14 @@
              version="2.0">
     <persistence-unit name="com.baeldung.inheritance.mariadb">
         <description>JPA Inheritance types comparison</description>
-        <class>com.baeldung.hibernate.pojo.inheritance.Animal</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Book</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Car</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Employee</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Product</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Person</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Pet</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Vehicle</class>
+        <class>com.baeldung.pojo.inheritance.Animal</class>
+        <class>com.baeldung.pojo.inheritance.Book</class>
+        <class>com.baeldung.pojo.inheritance.Car</class>
+        <class>com.baeldung.pojo.inheritance.Employee</class>
+        <class>com.baeldung.pojo.inheritance.Product</class>
+        <class>com.baeldung.pojo.inheritance.Person</class>
+        <class>com.baeldung.pojo.inheritance.Pet</class>
+        <class>com.baeldung.pojo.inheritance.Vehicle</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
@@ -25,14 +25,14 @@
     </persistence-unit>
     <persistence-unit name="com.baeldung.inheritance.postgres">
         <description>JPA Inheritance types comparison</description>
-        <class>com.baeldung.hibernate.pojo.inheritance.Animal</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Book</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Car</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Employee</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Product</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Person</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Pet</class>
-        <class>com.baeldung.hibernate.pojo.inheritance.Vehicle</class>
+        <class>com.baeldung.pojo.inheritance.Animal</class>
+        <class>com.baeldung.pojo.inheritance.Book</class>
+        <class>com.baeldung.pojo.inheritance.Car</class>
+        <class>com.baeldung.pojo.inheritance.Employee</class>
+        <class>com.baeldung.pojo.inheritance.Product</class>
+        <class>com.baeldung.pojo.inheritance.Person</class>
+        <class>com.baeldung.pojo.inheritance.Pet</class>
+        <class>com.baeldung.pojo.inheritance.Vehicle</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>

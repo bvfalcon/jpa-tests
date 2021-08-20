@@ -1,11 +1,9 @@
-package com.baeldung.hibernate.pojo.inheritance;
+package com.baeldung.pojo.inheritance;
 
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-@DiscriminatorValue("1")
-public class Book extends Product implements Item
+public class Car extends Vehicle implements Item
 {
 	private String field5;
 	private String field6;

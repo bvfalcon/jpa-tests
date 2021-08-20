@@ -1,4 +1,4 @@
-package com.baeldung.hibernate.pojo.inheritance;
+package com.baeldung.pojo.inheritance;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

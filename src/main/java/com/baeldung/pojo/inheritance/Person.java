@@ -1,13 +1,10 @@
-package com.baeldung.hibernate.pojo.inheritance;
+package com.baeldung.pojo.inheritance;
 
-import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
+import javax.persistence.MappedSuperclass;
 
-@Entity
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-public class Vehicle
+@MappedSuperclass
+public class Person
 {
 	@Id
 	private long id;

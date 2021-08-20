@@ -1,4 +1,4 @@
-package com.baeldung.hibernate;
+package com.baeldung;
 
 import java.io.IOException;
 

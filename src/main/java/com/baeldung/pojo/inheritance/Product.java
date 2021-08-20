@@ -1,10 +1,16 @@
-package com.baeldung.hibernate.pojo.inheritance;
+package com.baeldung.pojo.inheritance;
 
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
+import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 
-@MappedSuperclass
-public class Person
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "product_type", discriminatorType = DiscriminatorType.INTEGER)
+public class Product
 {
 	@Id
 	private long id;

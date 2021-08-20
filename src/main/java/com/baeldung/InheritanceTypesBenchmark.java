@@ -1,4 +1,4 @@
-package com.baeldung.hibernate;
+package com.baeldung;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
@@ -22,11 +22,11 @@ import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.TearDown;
 import org.openjdk.jmh.annotations.Warmup;
 
-import com.baeldung.hibernate.pojo.inheritance.Book;
-import com.baeldung.hibernate.pojo.inheritance.Car;
-import com.baeldung.hibernate.pojo.inheritance.Employee;
-import com.baeldung.hibernate.pojo.inheritance.Item;
-import com.baeldung.hibernate.pojo.inheritance.Pet;
+import com.baeldung.pojo.inheritance.Book;
+import com.baeldung.pojo.inheritance.Car;
+import com.baeldung.pojo.inheritance.Employee;
+import com.baeldung.pojo.inheritance.Item;
+import com.baeldung.pojo.inheritance.Pet;
 
 @BenchmarkMode(Mode.Throughput)
 @Measurement(iterations = 15)
