@@ -10,9 +10,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.version}</version>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>eclipselink</artifactId>
+            <version>${eclipselink.version}</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -43,7 +43,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <hibernate.version>5.5.6.Final</hibernate.version>
+        <eclipselink.version>2.7.9</eclipselink.version>
         <mysql.version>8.0.26</mysql.version>
         <postgresql.version>42.2.23</postgresql.version>
         <jmh-generator.version>1.32</jmh-generator.version>
