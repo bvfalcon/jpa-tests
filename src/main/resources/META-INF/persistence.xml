@@ -15,12 +15,11 @@
         <class>com.baeldung.pojo.inheritance.Vehicle</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
-            <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/inheritance"/>
-            <property name="javax.persistence.jdbc.user" value="root"/>
-            <property name="javax.persistence.jdbc.password" value="test"/>
-            <property name="eclipselink.target-database" value="MySQL" />
-            <property name="eclipselink.ddl-generation" value="create-or-extend-tables" />
+            <property name="openjpa.ConnectionDriverName" value="org.mariadb.jdbc.Driver"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:mysql://127.0.0.1:3306/inheritance"/>
+            <property name="openjpa.ConnectionUserName" value="root"/>
+            <property name="openjpa.ConnectionPassword" value="test"/>
+            <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema" />
         </properties>
     </persistence-unit>
     <persistence-unit name="com.baeldung.inheritance.postgres">
@@ -35,12 +34,11 @@
         <class>com.baeldung.pojo.inheritance.Vehicle</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
-            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://127.0.0.1:5432/inheritance"/>
-            <property name="javax.persistence.jdbc.user" value="postgres"/>
-            <property name="javax.persistence.jdbc.password" value="test"/>
-            <property name="eclipselink.target-database" value="PostgreSQL" />
-            <property name="eclipselink.ddl-generation" value="create-or-extend-tables" />
+            <property name="openjpa.ConnectionDriverName" value="org.postgresql.Driver"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:postgresql://127.0.0.1:5432/inheritance"/>
+            <property name="openjpa.ConnectionUserName" value="postgres"/>
+            <property name="openjpa.ConnectionPassword" value="test"/>
+            <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema" />
         </properties>
     </persistence-unit>
 </persistence> 

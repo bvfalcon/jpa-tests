@@ -10,9 +10,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>eclipselink</artifactId>
-            <version>${eclipselink.version}</version>
+            <groupId>org.apache.openjpa</groupId>
+            <artifactId>openjpa</artifactId>
+            <version>${openjpa.version}</version>
         </dependency>
         <dependency>
             <groupId>org.openjdk.jmh</groupId>
@@ -38,12 +38,31 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <eclipselink.version>2.7.9</eclipselink.version>
+        <openjpa.version>3.2.0</openjpa.version>
         <jmh-generator.version>1.32</jmh-generator.version>
     </properties>
 
     <build>
       <plugins>
+        <plugin>
+          <groupId>org.apache.openjpa</groupId>
+          <artifactId>openjpa-maven-plugin</artifactId>
+          <version>3.2.0</version>
+          <configuration>
+            <includes>**/pojo/inheritance/*.class</includes>
+            <addDefaultConstructor>true</addDefaultConstructor>
+            <enforcePropertyRestrictions>true</enforcePropertyRestrictions>
+          </configuration>
+          <executions>
+            <execution>
+              <id>enhancer</id>
+              <phase>process-classes</phase>
+              <goals>
+                <goal>enhance</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
